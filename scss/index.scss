@@ -1,0 +1,18 @@
+// abstracts 변수, 믹스인 정의
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// base    기본 정의
+@import "base/base";
+// @import "base/animations";
+// @import "base/typo";
+// @import "base/utilities";
+
+// components  반복사용되는 ui 요소 정의
+// @import "components/button";
+@import "components/nav";
+
+// layout  레이아웃 박스 크기 관련 정의
+@import "layout/header";
+// @import "layout/main";
+// @import "layout/footer";

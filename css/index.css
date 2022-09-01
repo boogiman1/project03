@@ -1,0 +1,176 @@
+@import url("https://use.typekit.net/tzb4dmm.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+  display: block;
+}
+
+.nav {
+  width: 100%;
+  padding: 2.6rem 4.2rem;
+  position: absolute;
+  background-color: rgba(161, 94, 94, 0.2);
+}
+.nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav_h1 {
+  width: 7.2rem;
+  height: 7.6rem;
+  float: left;
+}
+.nav_logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(/img/logo.png);
+}
+.nav_gnb::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav_gnb_li {
+  float: left;
+  margin-right: 6.7rem;
+  width: 16.684rem;
+  height: 7.6rem;
+  line-height: 7.6rem;
+}
+.nav_gnb_li:last-child {
+  margin: 0;
+}
+.nav_gnb_menu {
+  font-family: "ubuntu", "sans-serif";
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.nav_checkbox {
+  display: none;
+}
+.nav_button {
+  border: 0.2rem solid #fff;
+  position: absolute;
+  border-radius: 0.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  top: 4.6rem;
+  right: 4.2rem;
+  z-index: 2000;
+  cursor: pointer;
+  transform: all 0.7s;
+}
+.nav_icon {
+  position: relative;
+  margin-top: 1.3rem;
+  left: 23%;
+}
+.nav_icon::before {
+  top: 0.5rem;
+}
+.nav_icon::after {
+  bottom: 0.5rem;
+}
+.nav_icon::before, .nav_icon::after {
+  position: absolute;
+  content: "";
+  transition: all 0.5s;
+}
+.nav_icon, .nav_icon::before, .nav_icon::after {
+  width: 1.6rem;
+  height: 0.2rem;
+  display: block;
+  background: #fff;
+}
+.nav_button:hover .nav_icon::before {
+  top: 0;
+}
+.nav_button:hover .nav_icon::after {
+  bottom: 0;
+}
+.nav_body {
+  background-color: #fff;
+  height: 100vh;
+  width: 43.8rem;
+  padding: 17rem 0 0 7rem;
+  box-sizing: border-box;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  transition: all 0.7s;
+}
+.nav_item {
+  margin-bottom: 4.5rem;
+  overflow: hidden;
+  height: 3.5rem;
+}
+.nav_item a {
+  font-family: "ubuntu", "sans-serif";
+  font-size: 3rem;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: -0.1rem;
+  position: relative;
+}
+.nav_item a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #222;
+  height: 0.2rem;
+  transition: all 0.7s;
+  top: 4.2rem;
+  right: 100%;
+}
+.nav_item a::after.on {
+  right: 0%;
+}
+.nav_item a::after.off {
+  right: -100%;
+}
+.nav_checkbox:checked ~ .nav_button {
+  border-color: #222;
+}
+.nav_checkbox:checked ~ .nav_button .nav_icon {
+  background-color: unset;
+}
+.nav_checkbox:checked ~ .nav_button .nav_icon::before {
+  top: 0;
+  transform: rotate(135deg);
+  background-color: #222;
+}
+.nav_checkbox:checked ~ .nav_button .nav_icon::after {
+  bottom: 0;
+  transform: rotate(-675deg);
+  background-color: #222;
+}
+.nav_checkbox:checked ~ .nav_body {
+  left: 77%;
+}
+
+.header {
+  background: url(/img/main_visual01.jpg);
+  height: 100vh;
+}/*# sourceMappingURL=index.css.map */
