@@ -1,8 +1,9 @@
-// 영문 폰트 : ubuntu
-@import url("https://use.typekit.net/tzb4dmm.css");
 
 // 한글 폰트 : Noto Sans KR
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+// 영문 폰트 : ubuntu
+@import url("https://use.typekit.net/tzb4dmm.css");
+
 
 * {
     margin: 0;
@@ -19,3 +20,4 @@
   }
   body{overflow-y: scroll; overflow-x: hidden;}
   .container{width: 1260px; margin: 0 auto; display: block;}
+  .box_container{width: 1260px; margin: 0 auto; display: block;}
