@@ -1,0 +1,12 @@
+.contents{background-color: red; z-index: 1;
+    &_1{padding: 10rem 0 13rem;
+        &_ul{display: flex;}
+        &_li{width: 31.333333333%; margin-right: 3%;
+            a{display: block; width: 100%;
+                img{width: 100%;}
+            }
+        }
+        &_li:last-child{margin-right: 0;}
+    }
+    
+}

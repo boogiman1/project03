@@ -23,12 +23,6 @@ body {
   display: block;
 }
 
-.box_container {
-  width: 1260px;
-  margin: 0 auto;
-  display: block;
-}
-
 .nav {
   position: absolute;
   top: 0;
@@ -36,7 +30,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   padding: 1.5rem 4.2rem;
-  z-index: 1;
+  z-index: 2;
 }
 .nav.sticky {
   position: fixed;
@@ -203,6 +197,7 @@ body {
 .header {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .header .box {
   text-align: left;
@@ -213,6 +208,9 @@ body {
   top: 0;
 }
 .header .box_container {
+  width: 1260px;
+  margin: 0 auto;
+  display: block;
   top: 55%;
   left: 50%;
   position: absolute;
@@ -254,6 +252,7 @@ body {
 }
 .header .box.current {
   opacity: 1;
+  z-index: 1;
   transition: all 7s cubic-bezier(0, 1.15, 0.58, 1);
   transform: scale(1);
 }
@@ -266,4 +265,29 @@ body {
 
 .contents {
   height: 2000px;
+}
+
+.contents {
+  background-color: red;
+  z-index: 1;
+}
+.contents_1 {
+  padding: 10rem 0 13rem;
+}
+.contents_1_ul {
+  display: flex;
+}
+.contents_1_li {
+  width: 31.333333333%;
+  margin-right: 3%;
+}
+.contents_1_li a {
+  display: block;
+  width: 100%;
+}
+.contents_1_li a img {
+  width: 100%;
+}
+.contents_1_li:last-child {
+  margin-right: 0;
 }/*# sourceMappingURL=index.css.map */

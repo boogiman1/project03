@@ -1,4 +1,4 @@
-.nav{position: absolute; top: 0; height: 10.6rem; box-sizing: border-box;    width: 100%; padding: 1.5rem 4.2rem; z-index: 1;
+.nav{position: absolute; top: 0; height: 10.6rem; box-sizing: border-box;    width: 100%; padding: 1.5rem 4.2rem; z-index: 2;
     // sticky
     &.sticky{position: fixed; background-color: $colorW;}
     &.sticky ul li a{color: $colorB;}
