@@ -41,4 +41,26 @@
     &_checkbox:checked~&_button &_icon::before{top: 0; transform: rotate(135deg); background-color: $colorB;}
     &_checkbox:checked~&_button &_icon::after{bottom: 0; transform: rotate(-675deg); background-color: $colorB;}
     &_checkbox:checked~&_body{left: 77%;}
+    @include mq("small-screen-1"){
+        display: flex;
+        &_h1{float: none;}
+        &_gnb{display: flex; width: auto;
+            &_li{float: none;}
+        }
+        &_checkbox:checked~&_body{left: 65%;}
+    }
+    @include mq("small-screen-2"){
+        display: flex;
+        &_h1{float: none;}
+        &_gnb{display: none;}
+        &_checkbox:checked~&_body{left: 50%;}
+    }
+    @include mq("tablet-screen-1"){
+        padding: 2.6rem 4.2rem;
+        display: flex;
+        &_h1{float: none; width: 5.8rem; height: 6.1rem;}
+        &_logo{background-size: 11.6rem;}
+        &_gnb{display: none;}
+        &_checkbox:checked~&_body{left: 50%;}
+    }
 }

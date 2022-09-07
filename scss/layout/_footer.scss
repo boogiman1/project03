@@ -1,8 +1,19 @@
-footer{padding: 2.4rem 0; background-color: #1b1b1b; height: 100px;
-    .container{height: 5.2rem; display: flex;}
+footer{padding: 2.4rem 0; background-color: #1b1b1b;
+    .container{ display: flex;}
     h2, p{font-family: $fontK;}
     p{font-size: 1.5rem; line-height: 5.2rem; font-weight: 300; letter-spacing: -.1rem;}
     h2{margin-right: 5.5rem;}
     .address{color: #666; margin-right: 27.8rem;}
-    .cop{color: #555;}
+    .copy{color: #555;}
+    @include mq("small-screen-1"){
+        padding: 2.4rem 0;
+        .container{padding: 0 4rem; width: 100%; flex-direction: column; justify-content: center; align-items: center;}
+        .address{margin: 0;}
+    }
+    @include mq("small-screen-2"){
+        padding: 2.4rem 0;
+        .container{padding: 0 4rem; width: 100%; flex-direction: column; justify-content: center; align-items: center;}
+        .address{margin: 0;}
+    }
+
 }
