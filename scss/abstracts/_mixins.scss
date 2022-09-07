@@ -1,14 +1,22 @@
 @mixin mq($screen-width){
-    @if $screen-width == 'small-screen-1'{ // 미디어쿼리 작성 시 자동완성
-        @media screen and (min-width:900px) and (max-width:1200px) {
+    @if $screen-width == 'small-screen-1'{
+        @media screen and (min-width:901px) and (max-width:1216px) {
             @content;
         }
-    } @else if $screen-width == 'small-screen-2'{ // 미디어쿼리 작성 시 자동완성
-        @media screen and (min-width:701px) and (max-width:899px) {
+    } @else if $screen-width == 'small-screen-2'{
+        @media screen and (min-width:801px) and (max-width:900px) {
             @content;
         }
-    } @else if $screen-width == 'small-screen-3'{ // 미디어쿼리 작성 시 자동완성
-        @media screen and (max-width:700px) {
+    } @else if $screen-width == 'tablet-screen-1'{
+        @media screen and(min-width:641px) and (max-width:800px) {
+            @content;
+        }
+    } @else if $screen-width == 'tablet-screen-2'{
+        @media screen and (min-width:541px) and (max-width:640px) {
+            @content;
+        }
+    } @else if $screen-width == 'mobile-screen-1'{
+        @media screen and (max-width:540px) {
             @content;
         }
     }

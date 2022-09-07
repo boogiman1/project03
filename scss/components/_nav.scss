@@ -16,7 +16,7 @@
         &_li{float: left; margin-right: 6.7rem; /* width: 16.684rem; */ height: 7.6rem; line-height: 7.6rem;
             &:last-child{margin: 0;}
         }
-        &_menu{font-family: $fontE; color: $colorW; font-size: 1.7rem; font-weight: 500;}
+        &_menu{font-family: $fontE; color: $colorW; font-size: 1.7rem; font-weight: 500;transform: skew(-0.1deg);}
     }
     &_checkbox{display: none;}
     &_button{border: .2rem solid #fff; position: absolute; border-radius: .6rem; width: 3.2rem; height: 3.2rem; top: 3.6rem; right: 4.2rem; z-index: 2000; cursor: pointer; transform: all .7s;}
