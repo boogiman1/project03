@@ -63,4 +63,30 @@
         &_gnb{display: none;}
         &_checkbox:checked~&_body{left: 50%;}
     }
+    @include mq("tablet-screen-2"){
+        padding: 1.5rem 2rem;
+        height: auto;
+        display: flex;
+        &_h1{float: none; width: 5.8rem; height: 6.1rem;}
+        &_logo{background-size: 11.6rem;}
+        &_gnb{display: none;}
+        &_checkbox:checked~&_body{left: 26%;}
+        &_button{top: 3rem; right: 2rem;}
+    }
+    @include mq("mobile-screen-1"){
+        padding: 1.5rem 2rem;
+        height: auto;
+        display: flex;
+        &_h1{float: none; width: 4rem; height: 4.2rem;}
+        &_logo{background-size: 8rem 4rem; width: 4rem; height: 4.2rem; background-position: 100%;}
+        &_gnb{display: none;}
+        &_checkbox:checked~&_body{left: 26%;}
+        &_body{padding: 12rem 0 0 3rem;}
+        &_item{height: 2.4rem;}
+        &_button{top: 2rem; right: 2rem; border-color: $colorB;}
+        &_button &_icon{background-color: $colorB;}
+        &_button &_icon::after{background-color: $colorB;}
+        &_button &_icon::before{background-color: $colorB;}
+        .nav_link{font-size: 2rem;}
+    }
 }

@@ -31,6 +31,30 @@
             &_text{font-size: 1.4rem; line-height: 3.2rem; height: 9.6rem;}
         }
     }
+    @include mq('tablet-screen-1'){
+        &_1{width: 100%; padding: 10rem 2rem 13rem;
+            &_title{font-size: 2rem; line-height: 4rem; height: 8rem;}
+            &_text{font-size: 1.4rem; line-height: 3.2rem; height: 9.6rem;}
+        }
+    }
+    @include mq('tablet-screen-2'){
+        &_1{width: 100%; padding: 7rem 6.45rem;
+            &_ul{display: block;}
+            &_li{width: 100%; margin-right: 0; margin-bottom: 4rem;}
+            &_title{font-size: 1.8rem; line-height: 4rem; height: 8rem;}
+            &_text{font-size: 1.4rem; line-height: 3.2rem; height: 9.6rem; margin-top: 0;}
+        }
+    }
+    @include mq('mobile-screen-1'){
+        &_1{width: 100%; padding: 7rem 2rem;
+            &_ul{display: block; margin:0 2.35rem 4rem;}
+            &_li{width: 100%;margin-right: 0; margin-bottom: 4rem;}
+            &_text_box{padding-top: 2rem;}
+            &_news{font-size: 1.3rem; margin-bottom: .5rem;}
+            &_title{font-size: 1.6rem; line-height: 2.8rem; height: 5.6rem; margin-bottom: 1.2rem;}
+            &_text{font-size: 1.3rem; line-height: 2.5rem; height: 7rem; margin-top: 0;}
+        }
+    }
     // ==.contents_1
     // .contents_2
     &_2{background: url(../img/con02_bg.jpg); padding: 10.5rem 0 13rem; position: relative;
@@ -69,6 +93,41 @@
             &_img{margin-bottom: 0;}
             &_ul{flex-wrap: wrap;}
             &_li{width: 33.33333333%; margin-top: 5rem;}
+        }
+    }
+    @include mq("tablet-screen-1"){
+        &_2{padding: 10.5rem 0 13rem;
+            .container{padding: 0 2rem; width: 100%;}
+            &_img{margin-bottom: 0;}
+            &_ul{flex-wrap: wrap;}
+            &_li{width: 33.33333333%; margin-top: 5rem;}
+        }
+    }
+    @include mq("tablet-screen-2"){
+        &_2{padding: 7rem 0;
+            .container{padding: 0 2rem; width: 100%;}
+            &_img{margin-bottom: 0;
+                img{width: 16rem;}
+            }
+            &_ul{flex-wrap: wrap;}
+            &_li{width: 50%; margin-top: 5rem;}
+            &_img_name img{height: 1.5rem;}
+            &::after{width: 30rem; height: 32.6rem; background-size: 100% 100%; right: 0;}
+        }
+    }
+    @include mq("mobile-screen-1"){
+        &_2{padding: 7rem 0;
+            .container{padding: 0 2rem; width: 100%;}
+            &_img{margin-bottom: 0;
+                img{width: 16rem;}
+            }
+            &_ul{flex-wrap: wrap;}
+            &_li{width: 50%; margin-top: 5rem; height: auto;}
+            &_img_people{ width: 12rem; margin: auto;
+                img{width: 12rem;}
+            } 
+            &_img_name img{height: 1.5rem;}
+            &::after{width: 30rem; height: 32.6rem; background-size: 100% 100%; right: 0;}
         }
     }
     // ==.contents_2
@@ -120,6 +179,57 @@
                 }
             }
         }
+        @include mq('tablet-screen-1'){
+            padding: 12rem 0;
+            .container{width: 100%; padding: 0 2rem;}
+            &_title{font-size: 3.6rem;}
+            &_video{ flex-wrap: wrap;
+                &_R{width: 100%;}
+                &_box{
+                    iframe{margin: 0 auto;}
+                }
+                &_L{width: 100%;}
+                &_li{
+                    img{margin-right: 3rem; width: 18rem;}
+                    span{margin: auto 0; width: auto;}
+                }
+            }
+        }
+        @include mq('tablet-screen-2'){
+            padding: 7rem 0;
+            .container{width: 100%; padding: 0 2rem;}
+            &_title{font-size: 3.6rem;}
+            &_video{ flex-wrap: wrap;
+                &_R{width: 100%;}
+                &_box{ width: 100%;
+                    iframe{margin: 0 auto; width: 100%;}
+                }
+                &_text_title{font-size: 2.5rem; line-height: 3.2rem;}
+                &_L{width: 100%; margin-top: 5rem;}
+                &_li{
+                    img{margin-right: 3rem; width: 18rem;}
+                    span{margin: auto 0; width: auto; font-size: 1.4rem;}
+                }
+            }
+        }
+        @include mq('mobile-screen-1'){
+            padding: 5rem 0;
+            .container{width: 100%; padding: 0 2rem;}
+            &_title{font-size: 2.6rem;}
+            &_video{ flex-wrap: wrap;
+                &_R{width: 100%;}
+                &_box{ width: 100%;
+                    iframe{margin: 0 auto; width: 100%;}
+                }
+                &_text_sub_title{font-size: 1.3rem; margin-bottom: .5rem;}
+                &_text_title{font-size: 1.6rem; line-height: 3rem;}
+                &_L{width: 100%; margin-top: 5rem;}
+                &_li{
+                    img{margin-right: 3rem; width: 18rem;}
+                    span{margin: auto 0; width: auto; font-size: 1.3rem; line-height: 2.2rem;}
+                }
+            }
+        }
     }
 
     // ==.contents_3
@@ -134,19 +244,58 @@
             .line{display: inline-block; width: 5.3rem; height: .1rem; background-color: #d9e7ed; margin: 0 1.3rem .5rem;}
             span:last-child{font-weight: 300;}
         }
-        &_btn{display: block; padding: 1.2rem 5rem; border: .2rem solid $colorW; border-radius: 1.5rem; font-weight: 500; font-size: 1.6rem; width: 21.2rem; height: 5.2rem; overflow: hidden; transition: all .4s; position: relative;  z-index: 1;
+        &_btn{display: block; padding: 1.2rem 5rem; border: .2rem solid $colorW; border-radius: 1.5rem; font-weight: 500; font-size: 1.6rem; width: 21.2rem; height: 5.2rem; overflow: hidden; transition: all .4s; position: relative;  z-index: 1; letter-spacing: -.1rem; text-align: center;
         // hover
         &::after{content: ''; display: block; background-color: $colorW; width: 30rem; height: 30rem; position: absolute; border-radius: 50%; left: -22%; top: -256%; transform: scale(0); transition: all 1s; z-index: -1;}
         }
         &_btn:hover{color: $colorB; transition: all .4s;}
         &_btn:hover::after{transform: scale(1); transition: all 1s;}
         @include mq("small-screen-1"){
-            background-position: right -300px center;
+            background-position: right -30rem center;
             .container{padding: 0 4rem; width: 100%;}
         }
         @include mq("small-screen-2"){
-            background-position: right -300px center;
+            background-position: right -30rem center;
             .container{padding: 0 4rem; width: 100%;}
+        }
+        @include mq("tablet-screen-1"){
+            background-position: right -40rem center;
+            .container{padding: 0 2rem; width: 100%;}
+            &_name{font-size: 1.6rem;}
+            &_title{font-size: 2rem;
+                span{font-size: 2.8rem;}
+            }
+            &_text{font-size: 1.4rem;}
+            &_btn{padding: 1.2rem 3rem; width: 17.4rem; height: 5.2rem;
+                &::after{left: -38%;}
+            }
+        }
+        @include mq("tablet-screen-2"){
+            padding: 4rem 0;
+            background-position: right -40rem center;
+            .container{padding: 0 2rem; width: 100%;}
+            &_name{font-size: 1.6rem; margin-bottom: 0rem;}
+            &_title{font-size: 2rem;
+                span{font-size: 2.8rem;}
+            }
+            &_text{font-size: 1.4rem;}
+            &_btn{padding: 1.2rem 3rem; width: 17.4rem; height: 5.2rem;
+                &::after{left: -38%;}
+            }
+        }
+        @include mq("mobile-screen-1"){
+            padding: 4rem 0;
+            background-position: right -20rem center;
+            background-size: auto 100%;
+            .container{padding: 0 2rem; width: 100%;}
+            &_name{font-size: 1.6rem; margin-bottom: 0rem;}
+            &_title{font-size: 2rem;
+                span{font-size: 2.8rem;}
+            }
+            &_text{font-size: 1.4rem;}
+            &_btn{padding: 1.2rem 3rem; width: 17.4rem; height: 5.2rem;
+                &::after{left: -38%;}
+            }
         }
     }
 
