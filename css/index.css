@@ -14,6 +14,7 @@ html {
 
 body {
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .container {
@@ -525,9 +526,9 @@ body {
     width: 20.786rem;
     height: 3.8rem;
     padding: 1.2rem 1rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     box-sizing: border-box;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
   }
   .header .box_btn a::after {
     left: -22%;
