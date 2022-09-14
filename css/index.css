@@ -10,6 +10,9 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -273,6 +276,8 @@ html {
     padding: 1.5rem 2rem;
     height: auto;
     display: flex;
+    background-color: #fff;
+    position: fixed;
   }
   .nav_h1 {
     float: none;
