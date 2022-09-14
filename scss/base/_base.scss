@@ -17,6 +17,7 @@
   html {
     font-size: 62.5%;
     // rem 사용 시 *10px로 계산 가능하다.
+    overflow-x: hidden; overflow-y: scroll;
   }
-  body{overflow-x: hidden; overflow-y: scroll;}
+  // body{overflow-x: hidden; overflow-y: scroll;}
   .container{width: 1260px; margin: 0 auto; display: block;}
