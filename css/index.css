@@ -63,6 +63,7 @@ body {
   width: 7.2rem;
   height: 7.6rem;
   float: left;
+  text-indent: -99999999999px;
 }
 .nav_logo {
   display: block;
@@ -1410,6 +1411,7 @@ footer p {
 }
 footer h2 {
   margin-right: 5.5rem;
+  font-size: 0;
 }
 footer .address {
   color: #666;
