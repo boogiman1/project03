@@ -105,7 +105,7 @@ body {
   right: 4.2rem;
   z-index: 2000;
   cursor: pointer;
-  transform: all 0.7s;
+  transition: all 0.7s;
 }
 .nav_icon {
   position: relative;
@@ -1611,4 +1611,9 @@ footer .sns7:hover {
   footer ul li .sns.sns7 img {
     height: auto;
   }
+}
+footer > div {
+  margin: auto;
+  display: flex;
+  width: 18rem;
 }/*# sourceMappingURL=index.css.map */
