@@ -77,6 +77,8 @@
         padding: 1.5rem 2rem;
         height: auto;
         display: flex;
+        background-color: $colorW;
+        position: fixed;
         &_h1{float: none; width: 4rem; height: 4.2rem;}
         &_logo{background-size: 8rem 4rem; width: 4rem; height: 4.2rem; background-position: 100%;}
         &_gnb{display: none;}
