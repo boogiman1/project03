@@ -63,6 +63,7 @@ body {
   width: 7.2rem;
   height: 7.6rem;
   float: left;
+  text-indent: -99999999999px;
 }
 .nav_logo {
   display: block;
@@ -104,7 +105,7 @@ body {
   right: 4.2rem;
   z-index: 2000;
   cursor: pointer;
-  transform: all 0.7s;
+  transition: all 0.7s;
 }
 .nav_icon {
   position: relative;
@@ -586,9 +587,6 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   word-break: keep-all;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   line-height: 4.6rem;
 }
 .contents_1_text {
@@ -596,11 +594,8 @@ body {
   font-weight: 400;
   letter-spacing: -0.1rem;
   color: #222;
-  display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   height: 10.2rem;
   line-height: 3.4rem;
   margin-top: 1rem;
@@ -1410,6 +1405,7 @@ footer p {
 }
 footer h2 {
   margin-right: 5.5rem;
+  font-size: 0;
 }
 footer .address {
   color: #666;
@@ -1609,4 +1605,9 @@ footer .sns7:hover {
   footer ul li .sns.sns7 img {
     height: auto;
   }
+}
+footer > div {
+  margin: auto;
+  display: flex;
+  width: 18rem;
 }/*# sourceMappingURL=index.css.map */
